@@ -1,0 +1,43 @@
+Rails:
+  Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  ConsistentQuotesInMultiline: true
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+
+# enable application files when rubocop stops
+# having trouble with squiggly here docs
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - "config/**/*"
+    - "lib/tasks/**/*"
+    - "db/**/*"
+    - "bin/*"
+    - "Rakefile"
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 30
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 30
+
+Documentation:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Metrics/ModuleLength:
+  CountComments: false
+  Max: 300
+
+CyclomaticComplexity:
+  Max: 15
