@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'react-rails'
 gem 'rubocop'
 
 group :development, :test do
