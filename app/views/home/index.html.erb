@@ -1,8 +1,9 @@
-<h1>Home#index</h1>
+<h1>Welcome <%= current_user.email %></h1>
 <h4>leaderboard</h4>
 <ol>
   <%@leaders.each do |leader|%>
     <li><%=leader["email"]%><%= leader["rank"] %></li>
   <%end%>
 </ol>
-<p></p>
+
+<%= link_to "play_game", play_game_index_path %>
