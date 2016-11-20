@@ -9,30 +9,31 @@ var Board = React.createClass({
       "border": "1px solid black",
       "margin": "0 auto",
       "border-collapse": "collapse",
-      "background": "black";
+      "height": "400px",
+      "width": "400px",
+      "background": "black"
     }
+
     var td = {
       "width": "40px",
       "height": "40px"
     }
 
     var wSquare = {
-
-      "background": "black";
+      "background": "white"
     }
-  }
-</style>
 
-<table class="bored">
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</table>
+    return(
+      <table style={table}>
+        <tr> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> </tr>
+        <tr> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td><td style={td}></td>  </tr>
+        <tr> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> </tr>
+        <tr> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td><td style={td}></td>  </tr>
+        <tr> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> </tr>
+        <tr> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td><td style={td}></td>  </tr>
+        <tr> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> </tr>
+        <tr> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td> <td style={td}></td> <td style={td, wSquare}></td><td style={td}></td>  </tr>
+       </table>
     );
   }
 });
