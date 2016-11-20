@@ -1,3 +1,18 @@
-// Place all the styles related to the playGame controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.boardStyle{
+  height: 300px;
+  width: 300px;
+  background-color: grey;
+  }
+
+li:odd{
+  color: blue;
+}
+
+li:even{
+  color: red;
+}
+
+.square{
+  border: 2px solid black;
+  height: 37.5px;
+}
